@@ -1,52 +1,12 @@
 <!-- header.html -->
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">My Website</a>
-    </div>
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="index.html" class="font-bold text-xl text-gray-800">My Website</a>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <nav class="flex gap-6 text-gray-700">
+      <a href="index.html" class="hover:text-blue-500">Home</a>
+      <a href="about.html" class="hover:text-blue-500">About</a>
+      <a href="contact.html" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </div>
 </header>
-
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .navbar {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 16px;
-  }
-
-  .nav-links {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav-links li {
-    margin-left: 20px;
-  }
-
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-</style>

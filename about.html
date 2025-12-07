@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Me</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
-  <div w3-include-html="header.html"></div>
+  <!-- W3.js for HTML includes -->
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script>
-    w3.includeHTML();
-  </script>
 </head>
-<body>
-  <main>
-    <h1>About Me</h1>
-    <p>Hi, I’m Roger Chen. I’m a Senior Software Development Manager based in Mississauga, Ontario. 
+<body class="bg-gray-50 text-gray-900">
+  <div w3-include-html="header.html"></div>
+
+  <main class="content">
+    <h1 class="text-3xl font-bold mb-4">About Me</h1>
+    <p class="text-gray-700 leading-relaxed">
+      Hi, I'm Roger Chen. I'm a Senior Software Development Manager based in Mississauga, Ontario. 
     I specialize in C#, ASP.NET, cloud technologies, and leading global software development teams.</p>
 
-    <p>This site is part of my test environment to explore outsourcing workflows, 
+    <p class="text-gray-700 leading-relaxed">This site is part of my test environment to explore outsourcing workflows, 
     evaluate offshore teams, and build small prototypes before delivering more complex projects.</p>
   </main>
 
-  <footer>
-    <p>© 2025 Roger Chen</p>
-  </footer>
+<div w3-include-html="footer.html"></div>
+  <script>
+      w3.includeHTML();
+  </script>
 </body>
 </html>
