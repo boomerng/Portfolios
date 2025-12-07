@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - My Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css">
-  <div w3-include-html="header.html"></div>
+  <!-- W3.js for HTML includes -->
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-  <script>
-    w3.includeHTML();
-  </script>
 </head>
-<body>
-  <main>
-    <h1>Contact Information</h1>
-    <p>You can reach me at:</p>
+<body class="bg-gray-50 text-gray-900">
+  <div w3-include-html="header.html"></div>
+
+  <main class="content">
+    <h1 class="text-3xl font-bold mb-4">Contact Information</h1>
+    <p class="text-gray-700 leading-relaxed">You can reach me at:</p>
 
     <ul>
       <li>Email: <strong>mrrochen@gmail.com</strong></li>
       <li>Location: Mississauga, Ontario, Canada</li>
     </ul>
 
-    <p>This contact page is for demonstration purposes and will expand later 
+    <p class="text-gray-700 leading-relaxed">This contact page is for demonstration purposes and will expand later 
     to include forms, project listings, and user login functionality.</p>
   </main>
 
-  <footer>
-    <p>© 2025 Roger Chen</p>
-  </footer>
+  <div w3-include-html="footer.html"></div>
+  <script>
+      w3.includeHTML();
+  </script>
 </body>
 </html>
