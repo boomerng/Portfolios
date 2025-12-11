@@ -1,6 +1,50 @@
 <!-- footer.html -->
-<footer class="bg-gray-100 border-t mt-16">
-  <div class="max-w-4xl mx-auto px-4 py-6 text-center text-gray-600 text-sm">
-    © 2025 My Website — All rights reserved.
+<footer class="relative mt-20 border-t border-white/10 bg-black/20 backdrop-blur-sm">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid md:grid-cols-3 gap-8 mb-8">
+      <!-- About Section -->
+      <div>
+        <h3 class="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">
+          Roger Chen
+        </h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Senior Software Development Manager passionate about building innovative solutions and leading talented teams.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-400 hover:text-purple-400 transition-colors">Home</a></li>
+          <li><a href="about.html" class="text-gray-400 hover:text-purple-400 transition-colors">About Me</a></li>
+          <li><a href="contact.html" class="text-gray-400 hover:text-purple-400 transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-white">Get In Touch</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li class="flex items-center gap-2">
+            <span>📧</span>
+            <a href="mailto:mrrochen@gmail.com" class="hover:text-cyan-400 transition-colors">mrrochen@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span>📍</span>
+            <span>Mississauga, Ontario, Canada</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="pt-8 border-t border-white/10 text-center">
+      <p class="text-gray-500 text-sm">
+        © 2025 Roger Chen — All rights reserved. Built with 
+        <span class="text-purple-400">Tailwind CSS 4</span> & 
+        <span class="text-cyan-400">W3.js</span>
+      </p>
+    </div>
   </div>
 </footer>

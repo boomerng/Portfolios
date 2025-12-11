@@ -3,22 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - My Website</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
-  <!-- W3.js for HTML includes -->
+  <title>Home - Roger Chen</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="CSS/styles.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white min-h-screen">
   <div w3-include-html="header.html"></div>
 
-  <main class="content">
-    <h1 class="text-3xl font-bold mb-4">Welcome</h1>
-    <p class="text-gray-700 leading-relaxed">
-      This is a clean starter website layout. Use this as your framework -- 
-      add features, templates, pages, user login prototypes, anything you want.
-    </p>
+  <!-- Hero Section -->
+  <main class="relative overflow-hidden">
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+      <div class="absolute top-40 right-10 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+      <div class="absolute -bottom-8 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative max-w-6xl mx-auto px-4 py-20 md:py-32">
+      <div class="text-center space-y-8 animate-fade-in">
+        <!-- Avatar -->
+        <div class="flex justify-center mb-8">
+          <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+            <div class="relative w-32 h-32 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full flex items-center justify-center text-5xl font-bold">
+              RC
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 animate-gradient">
+            Roger Chen
+          </span>
+        </h1>
+        
+        <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light">
+          Senior Software Development Manager
+        </p>
+
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+          Specializing in <span class="text-purple-400 font-semibold">C#</span>, 
+          <span class="text-cyan-400 font-semibold">ASP.NET</span>, 
+          <span class="text-pink-400 font-semibold">Cloud Technologies</span>, 
+          and leading global software development teams.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+          <a href="about.html" class="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50">
+            <span class="relative z-10">Learn More About Me</span>
+            <div class="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+          
+          <a href="contact.html" class="group px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300 hover:scale-105">
+            Get In Touch
+            <span class="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="relative max-w-6xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Feature Card 1 -->
+        <div class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+          <div class="text-4xl mb-4">💻</div>
+          <h3 class="text-xl font-bold mb-2 text-purple-300">Full-Stack Development</h3>
+          <p class="text-gray-400">Building scalable applications with modern technologies and best practices.</p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
+          <div class="text-4xl mb-4">☁️</div>
+          <h3 class="text-xl font-bold mb-2 text-cyan-300">Cloud Architecture</h3>
+          <p class="text-gray-400">Designing and implementing robust cloud solutions for enterprise needs.</p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="group relative bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20">
+          <div class="text-4xl mb-4">👥</div>
+          <h3 class="text-xl font-bold mb-2 text-pink-300">Team Leadership</h3>
+          <p class="text-gray-400">Leading global teams to deliver exceptional software products.</p>
+        </div>
+      </div>
+    </div>
   </main>
   
   <div w3-include-html="footer.html"></div>
