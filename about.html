@@ -3,26 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
-  <!-- W3.js for HTML includes -->
+  <title>About Me - Roger Chen</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="CSS/styles.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white min-h-screen">
   <div w3-include-html="header.html"></div>
 
-  <main class="content">
-    <h1 class="text-3xl font-bold mb-4">About Me</h1>
-    <p class="text-gray-700 leading-relaxed">
-      Hi, I'm Roger Chen. I'm a Senior Software Development Manager based in Mississauga, Ontario. 
-    I specialize in C#, ASP.NET, cloud technologies, and leading global software development teams.</p>
+  <main class="relative max-w-5xl mx-auto px-4 py-24 md:py-32">
+    <!-- Animated Background -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-20 right-10 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+      <div class="absolute bottom-20 left-10 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+    </div>
 
-    <p class="text-gray-700 leading-relaxed">This site is part of my test environment to explore outsourcing workflows, 
-    evaluate offshore teams, and build small prototypes before delivering more complex projects.</p>
+    <!-- Content -->
+    <div class="relative">
+      <!-- Header -->
+      <div class="text-center mb-16 animate-fade-in">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400">
+            About Me
+          </span>
+        </h1>
+        <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-cyan-500 mx-auto rounded-full"></div>
+      </div>
+
+      <!-- Profile Card -->
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 md:p-12 mb-8 hover:bg-white/10 transition-all duration-500">
+        <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+          <!-- Avatar -->
+          <div class="relative group flex-shrink-0">
+            <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
+            <div class="relative w-40 h-40 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-2xl flex items-center justify-center text-6xl font-bold">
+              RC
+            </div>
+          </div>
+
+          <!-- Bio -->
+          <div class="flex-1 space-y-4">
+            <h2 class="text-3xl font-bold text-purple-300">Roger Chen</h2>
+            <p class="text-xl text-gray-300">Senior Software Development Manager</p>
+            <p class="text-gray-400 leading-relaxed">
+              Hi, I'm Roger Chen, based in Mississauga, Ontario. With extensive experience in software development and team leadership, I specialize in building scalable applications using C#, ASP.NET, and modern cloud technologies.
+            </p>
+            <p class="text-gray-400 leading-relaxed">
+              I'm passionate about exploring new technologies, optimizing development workflows, and leading global teams to deliver exceptional software products. This site serves as my test environment for prototyping ideas and evaluating innovative solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <!-- Technical Skills -->
+        <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+          <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+            <span class="text-3xl">🛠️</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">Technical Skills</span>
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">C# & .NET</span>
+                <span class="text-purple-400">Expert</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div class="bg-gradient-to-r from-purple-500 to-cyan-500 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">Cloud Technologies</span>
+                <span class="text-cyan-400">Advanced</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div class="bg-gradient-to-r from-cyan-500 to-purple-500 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span class="text-gray-300">ASP.NET</span>
+                <span class="text-pink-400">Expert</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div class="bg-gradient-to-r from-pink-500 to-purple-500 h-2 rounded-full" style="width: 93%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leadership -->
+        <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+          <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+            <span class="text-3xl">🎯</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-purple-400">Leadership</span>
+          </h3>
+          <ul class="space-y-4 text-gray-300">
+            <li class="flex items-start gap-3">
+              <span class="text-purple-400 mt-1">✓</span>
+              <span>Leading global software development teams</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-cyan-400 mt-1">✓</span>
+              <span>Agile & Scrum methodologies</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-pink-400 mt-1">✓</span>
+              <span>Strategic planning & execution</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-purple-400 mt-1">✓</span>
+              <span>Mentoring & team development</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Experience Timeline -->
+      <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+        <h3 class="text-2xl font-bold mb-8 flex items-center gap-3">
+          <span class="text-3xl">💼</span>
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">Experience Highlights</span>
+        </h3>
+        <div class="space-y-6">
+          <div class="relative pl-8 border-l-2 border-purple-500">
+            <div class="absolute w-4 h-4 bg-purple-500 rounded-full -left-[9px] top-1"></div>
+            <h4 class="text-xl font-semibold text-purple-300 mb-2">Senior Software Development Manager</h4>
+            <p class="text-gray-400 mb-2">Leading enterprise-level projects and managing cross-functional teams</p>
+            <p class="text-sm text-gray-500">Mississauga, Ontario, Canada</p>
+          </div>
+          <div class="relative pl-8 border-l-2 border-cyan-500">
+            <div class="absolute w-4 h-4 bg-cyan-500 rounded-full -left-[9px] top-1"></div>
+            <h4 class="text-xl font-semibold text-cyan-300 mb-2">Cloud Architecture Specialist</h4>
+            <p class="text-gray-400 mb-2">Designing scalable cloud solutions for modern applications</p>
+            <p class="text-sm text-gray-500">Focus on Azure & AWS platforms</p>
+          </div>
+          <div class="relative pl-8 border-l-2 border-pink-500">
+            <div class="absolute w-4 h-4 bg-pink-500 rounded-full -left-[9px] top-1"></div>
+            <h4 class="text-xl font-semibold text-pink-300 mb-2">Full-Stack Developer</h4>
+            <p class="text-gray-400 mb-2">Building robust applications with C#, ASP.NET, and modern frameworks</p>
+            <p class="text-sm text-gray-500">Enterprise & startup environments</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
-<div w3-include-html="footer.html"></div>
+  <div w3-include-html="footer.html"></div>
   <script>
       w3.includeHTML();
   </script>

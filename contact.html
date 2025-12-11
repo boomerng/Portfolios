@@ -3,26 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - My Website</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
-  <!-- W3.js for HTML includes -->
+  <title>Contact - Roger Chen</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="CSS/styles.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white min-h-screen">
   <div w3-include-html="header.html"></div>
 
-  <main class="content">
-    <h1 class="text-3xl font-bold mb-4">Contact Information</h1>
-    <p class="text-gray-700 leading-relaxed">You can reach me at:</p>
+  <main class="relative max-w-5xl mx-auto px-4 py-24 md:py-32">
+    <!-- Animated Background -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute top-20 left-10 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
+    </div>
 
-    <ul>
-      <li>Email: <strong>mrrochen@gmail.com</strong></li>
-      <li>Location: Mississauga, Ontario, Canada</li>
-    </ul>
+    <!-- Content -->
+    <div class="relative">
+      <!-- Header -->
+      <div class="text-center mb-16 animate-fade-in">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
+          <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400">
+            Get In Touch
+          </span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+          Have a project in mind or want to discuss opportunities? I'd love to hear from you!
+        </p>
+        <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-cyan-500 mx-auto rounded-full mt-6"></div>
+      </div>
 
-    <p class="text-gray-700 leading-relaxed">This contact page is for demonstration purposes and will expand later 
-    to include forms, project listings, and user login functionality.</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Contact Info Cards -->
+        <div class="space-y-6">
+          <!-- Email Card -->
+          <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                📧
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-purple-300">Email</h3>
+                <a href="mailto:mrrochen@gmail.com" class="text-gray-300 hover:text-cyan-400 transition-colors break-all">
+                  mrrochen@gmail.com
+                </a>
+                <p class="text-sm text-gray-500 mt-2">I'll respond within 24 hours</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 bg-gradient-to-br from-cyan-500 to-purple-500 rounded-xl flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                📍
+              </div>
+              <div>
+                <h3 class="text-xl font-bold mb-2 text-cyan-300">Location</h3>
+                <p class="text-gray-300">Mississauga, Ontario</p>
+                <p class="text-gray-300">Canada</p>
+                <p class="text-sm text-gray-500 mt-2">Open to remote opportunities</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links Card -->
+          <div class="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-pink-500/20">
+            <div class="flex items-start gap-4">
+              <div class="w-14 h-14 bg-gradient-to-br from-pink-500 to-purple-500 rounded-xl flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">
+                🔗
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold mb-4 text-pink-300">Connect</h3>
+                <div class="flex gap-3">
+                  <a href="#" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110">
+                    <span class="text-xl">💼</span>
+                  </a>
+                  <a href="#" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110">
+                    <span class="text-xl">🐙</span>
+                  </a>
+                  <a href="#" class="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-lg flex items-center justify-center transition-all hover:scale-110">
+                    <span class="text-xl">🐦</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+          <h2 class="text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-cyan-400">
+            Send a Message
+          </h2>
+          <form class="space-y-6">
+            <!-- Name Input -->
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
+              <input type="text" placeholder="John Doe" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+            </div>
+
+            <!-- Email Input -->
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Your Email</label>
+              <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent transition-all">
+            </div>
+
+            <!-- Subject Input -->
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+              <input type="text" placeholder="Project Inquiry" class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all">
+            </div>
+
+            <!-- Message Textarea -->
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+              <textarea rows="5" placeholder="Tell me about your project..." class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all resize-none"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full py-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-xl font-semibold text-lg hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 transition-all duration-300">
+              Send Message
+              <span class="inline-block ml-2">→</span>
+            </button>
+          </form>
+
+          <p class="text-sm text-gray-500 mt-6 text-center">
+            This form is for demonstration purposes. Full functionality will be added soon.
+          </p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <div w3-include-html="footer.html"></div>
